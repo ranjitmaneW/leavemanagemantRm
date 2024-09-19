@@ -45,7 +45,7 @@ public class LeaveApplicationController {
     public LeaveApplication updateLeaveStatus(@PathVariable Long leaveId, @RequestParam LeaveStatus status) {
         return leaveApplicationService.updateLeaveStatus(leaveId, status);
     }
-
+//no changes
     @GetMapping("/all")
     public List<LeaveApplication> getAllLeaves() {
         return leaveApplicationService.getAllLeaves();
